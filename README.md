@@ -1,2 +1,2 @@
-# TMC Learning health System Research Forum 2024
-https://ohnlp.github.io/tmclhsresearchforum2024/
+# TMC AI Submmit 2024
+https://ohnlp.github.io/TMCAISummit2024/
