@@ -5,46 +5,67 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="apple-touch-icon" href="http://conveyux.com/wp-content/uploads/conveyux-apple-touch-icon.png">
-    <!--     <link rel="shortcut icon" type="image/x-icon" href="./logo.ico">
-    <link rel="stylesheet" href="./style.css" media="all"> -->
-    <!-- This site is optimized with the Yoast WordPress SEO Premium plugin v2.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>TMC AI Summit 2024</title>
+    <title>TMC learning health system Research Forum 2024</title>
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="TMC AI Summit 2024">
     <meta property="og:site_name" content="TMC AI Summit 2024">
-    <script async="" src="./analytics.js"></script>
-    <script src="./wp-emoji-release.min.js" type="text/javascript"></script>
     <style type="text/css">
+    /* Make the header fixed at the top of the viewport */
+    header.nav.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensures header stays on top */
+        background-color: white; /* Adds a background color to ensure content beneath doesn’t show through */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow to the header */
+    }
+
+    /* Add padding to the body to prevent content from being hidden behind the fixed header */
+    body {
+        padding-top: 6px; /* Adjust this value depending on the height of the header */
+    }
+
     /* Style for the navigation menu links */
     .navbar-menu a {
-        font-size: 12px; /* Increase font size as needed */
+        font-size: 26px; /* Increase font size as needed */
         font-weight: bold; /* Make font weight bold for better readability */
         color: #333; /* Adjust color if needed */
         padding: 10px 15px; /* Add padding to increase the clickable area and spacing */
         text-decoration: none; /* Optional: removes underline from links */
     }
-        
-    .contact-a, .contact-a:hover{
-        margin-top:22px;
-        margin-bottom:11px;
+
+    .contact-a, .contact-a:hover {
+        margin-top: 22px;
+        margin-bottom: 11px;
         font-size: 21px;
         text-decoration: none;
         color: rgba(83, 192, 247, 0.91);
     }
 
-/*     /* Adjust the size of the logo here */
+    /* Adjust the size of the logo here */
     .header-logo-img {
         width: 300px; /* You can change this value to adjust the size */
-    } */
-    /* Style for widget titles, adjust the font size and color to match the Steering Committee section */
-    .widget-heading {
-        font-size: 20px; /* This should be the same size as your Steering Committee heading */
-        color: #333; /* This should be the same color as your Steering Committee heading */
-        text-align: center; /* Assuming you want it centered */
-        margin-top: 20px; /* Adjust as needed for spacing */
-        margin-bottom: 40px; /* Increase the bottom margin to add more space */
     }
+
+    /* Style for widget titles */
+    .widget-heading {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Adjustments for header figure */
+    .header-container img {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
     /* Reduce space between the list item and its nested list */
     .quote-content li + ul {
         margin-top: 5px; /* Reduce this value as needed */
@@ -362,38 +383,37 @@
 
    
 <body class="home blog">
-    <header class="nav header">
-        <div class="header-container">
-<!--             <a href="" id="logo" class="header-logo">
-                <img class="header-logo-img" src="./amiawg.png" alt="Logo The AMIA Conference" title="The AMIA Conference">
-            </a> -->
-            <!-- Navigation Bar -->
-            <nav class="navbar" role="navigation">
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="tyler-navigation">
-                    <div class="menu-current-container">
-                        <ul id="menu-primary" class="navbar-menu">
-                            <li class="menu-item"><a href="#">Home</a></li>
-                            <li class="menu-item"><a href="#introduction">Call for Participation</a></li>
-                            <li class="menu-item"><a href="#keynote-speakers">Keynote Speakers</a></li>
-                            <li class="menu-item"><a href="#panel-discussion">Panel Discussion</a></li> <!-- Added link for Panel Discussion -->
-                            <li class="menu-item"><a href="#invited-speakers">Invited Speakers</a></li> <!-- Added link for Invited Speakers -->
-                            <li class="menu-item"><a href="#steering-committee">Steering Committee</a></li>
-                            <li class="menu-item"><a href="#organizational-committee">Organizational Committee</a></li>
-                            <li class="menu-item"><a href="#submissions">Submissions</a></li>
-                            <li class="menu-item"><a href="#contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>            
-        </div>
-    </header>
+<!--
+<header class="nav header">
+   <div class="header-container">
+       <img src="https://github.com/OHNLP/tmclhsresearchforum2024/raw/main/header-fig.jpg" alt="TMC Learning Health System Research Forum 2024 Header" />
+       <nav class="navbar" role="navigation">
+           <div class="collapse navbar-collapse" id="tyler-navigation">
+               <div class="menu-current-container">
+                   <ul id="menu-primary" class="navbar-menu">
+                       <li class="menu-item"><a href="#">About Us</a></li>
+                       <li class="menu-item"><a href="#keynote-speakers">Keynote Speakers</a></li>
+                       <li class="menu-item"><a href="#invited-speakers">Invited Speakers</a></li>
+                       <li class="menu-item"><a href="#organizational-committee">Organizational Committee</a></li>
+                       <li class="menu-item"><a href="#contact">Contact Us</a></li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </div>
+</header>
+-->
+
+    
+    
+    
+
     <main id="main">
   <div class="hero-container">
             <div class="carousel slide" id="hero-carousel" data-ride="carousel" data-interval="6000">
                 <div class="carousel-inner" role="listbox" id="item-img">
                     <div class="item active">
-                        <img class="hero-carousel" style="width: 90%; margin: auto" src="./AI_Summit2024.png" alt>
+                        <img class="hero-carousel" style="width: 90%; margin: auto" src="./ICIBM.png" alt>
                     </div>
                 </div>
                 <ol class="carousel-indicators" style="bottom:50px">
@@ -407,24 +427,22 @@
         <div id="text" class="widget widget-description">
             <div class="container">
                 <div class="col-md-8 col-md-push-2">
-                    <h2 class="widget-heading">Welcome to TMC AI Summit 2024</h2>
-                    <!-- Registration Notice -->                    
-                <!--    <p style="text-align: center; font-size: 20px; margin-top: 20px;">
-                        <strong>Please register for the virtual session using the provided link:</strong> <br>
-                        <a href="https://events.teams.microsoft.com/event/14fd5aab-565e-40cb-9fbf-7c9b332e11ea@7b326d24-41ad-4f57-bc60-89e4a6ac721b" target="_blank" style="color: blue; text-decoration: underline;">Virtual Session Registration</a>
-                    </p> -->
-                    <!-- Location Information -->
-                    <h3 class="widget-heading" style="font-size: 30px; color: #333; text-align: center; margin-top: 20px;">Location</h3>
-                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Cooley University Life Center at UTHealth Houston<br>7440 Cambridge St, Houston, TX 77054</strong></span></h3>
-                    <div style="width:300px; background-color:#006791; margin-left:30%; border-radius: 4px;">
-                            <a style="  font-family:Ubuntu;color: #fff; font-size:28px; margin:0 11px; text-decoration: none;"href="https://docs.google.com/forms/d/e/1FAIpQLSdWO7bX-UNklo2JXv6JEzVEia4Lfn7C3z7jT6yNT0ZH1JJmPQ/viewform">Registration</a>
-                    </div>
+                    <h2 class="widget-heading">Welcome to TMC Learning Health System Research Forum 2024</h2>
+
+                    <!-- Program View -->
                     <div style="margin-top: 20px; text-align: center;">
-                        <a href="TMC_AI_Summit_2024-Program.pdf" target="_blank" style="font-size: 20px; color: blue; text-decoration: underline;">The whole program goes here!</a>
+                        <a href="TMC Learning Health System Research Forum 2024 .pdf" target="_blank" style="font-size: 20px; color: blue; text-decoration: underline;">The whole program goes here!</a>
                     </div>
-                </div> 
+
+                    <!-- Existing Registration Link -->
+                    <div style="width:300px; background-color:#006791; margin-left:30%; border-radius: 4px; margin-top: 20px;">
+                        <a style="font-family:Ubuntu;color: #fff; font-size:28px; margin:0 11px; text-decoration: none;" href="https://forms.gle/rYzEUPZhAig4pQUE9">Registration</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         
 <!-- Rest of the HTML content continues here... -->
         
@@ -433,77 +451,18 @@
         <div id="introduction" class="widget widget-speakers">
             <div class="container">
                 <div class="widget-header">
-                    <h2 class="widget-body">Call for Participation</h2>
-                    <p class="quote-content">As Artificial Intelligence (AI) technologies evolve at a rapid pace, their potential to revolutionize healthcare practices, diagnostics, treatment plans, and patient outcomes is becoming increasingly apparent. This summit seeks to bridge the gap between advanced AI research and its practical applications in the biomedical and healthcare sectors. Attendees will gain insights into the latest breakthroughs, best practices, challenges, and strategies for integrating AI seamlessly into biomedicine and healthcare solutions. </p>                    
-                    <p class="quote-content"> We are delighted to announce the Call for Participation for the TMC AI Summit. We invite contributions that encompass, but are not limited to, the following topics:</p>
-                    <ol class="quote-content" style="margin-left:40px">
-                        <li>Real-world Data Analytics</li>
-                        <br>
-                        <ul class="quote-content" style="margin-left:40px">
-                            <li>Data Quality, Assessment, Abstraction, and Curation</li>
-                            <li>
-                                Data Integration and Standardization</li>
-                            <li>
-                                Health Data Analytics: Mining, Visualization, and Interpretation</li>                            
-                        </ul>
-                        <br>
-                        <li>AI in Biomedicine and Healthcare</li>
-                        <br>
-                        <ul class="quote-content" style="margin-left:40px">
-                            <li>AI-driven Diagnostic Tools and Imaging Analysis</li>
-                            <li>
-                                AI in Genomics and Personalized Medicine</li>
-                            <li>
-                                AI in Drug Discovery and Development</li>
-                            <li>Natural Language Processing in Healthcare</li>
-                        </ul>
-                        <br>
-                        <li>Desiderata in Translational AI</li>
-                        <br>
-                        <ul class="quote-content" style="margin-left:40px">
-                            <li>Patient-centered AI solutions: Ensuring safety, privacy, and ethics</li>
-                            <li>
-                                AI for combating Health Disparity</li>
-                            <li>
-                                Explainability, Generalizability, Reproducibility</li>                            
-                        </ul>
-                        <br>
-                        <li>Real-world Implementation</li>
-                        <br>
-                        <ul class="quote-content" style="margin-left:40px">
-                            <li>Real-world Implementation and Evaluation</li>
-                            <li>
-                                Clinical Decision Support Systems</li>
-                            <li>
-                                Challenges in AI Translation: From Bench to Bedside</li>                            
-                        </ul>
-                        <br>
-                     </ol>
-                    <p class="quote-content"> Please join us in shaping the future of biomedicine and healthcare with AI. This is a prime opportunity to share your findings, interact with experts, and contribute to an ever-evolving field.</p>
-                </div>
-            </div>
-        </div>
+                       <!-- <h2 class="widget-body">About Us</h2> -->
+                    <p class="quote-content">The vision of the learning precision health is to leverage technology, data analytics, and evidence-based practices to create a feedback loop that continuously informs and improves healthcare delivery, policy, and practice, with the goals of preventing disease occurrence, detecting diseases earlier, and advancing human health. Rapid advances in computing generally and artificial intelligence (AI) specifically, suggest that data collection, analysis and modelling will be increasingly important to learning precision health. This workshop will provide a comprehensive overview of learning precision health, highlighting the role of real-world evidence in improving patient outcomes and healthcare efficiency. Participants will gain insights into the foundational principles of learning precision health, the technologies that support them, and practical steps for their implementation, especially in the domains of cancer, aging, psychiatry and rare diseases. Through interactive sessions and expert presentations, attendees will learn how to leverage data science, informatics and AI to create a continuous learning environment within their healthcare organizations.</p>                    
         <!-- Program -->
        
         <div id="program" class="widget widget-speakers">
             <div class="container">
                 <div class="widget-header">
                     <h2 class="widget-body">Important Dates</h2>
-                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">
-                        Submission Deadline: 
-                        <span style="text-decoration: line-through;">Jan 22, 2024</span>
-                        <span style="background-color: yellow;">Jan 25, 2024</span>
-                    </strong></span></h3>
-                     
-                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">
-                        Notification of Acceptance: 
-                        <span style="text-decoration: line-through;">Jan 31, 2024</span>
-                        <span style="background-color: yellow;">Feb 5, 2024</span>
-                    </strong></span></h3>
-                    
-                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Conference date: Feb 20, 2024</strong></span></h3>
+                                       
+                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Conference date: October 10, 2024</strong></span></h3>
         
-                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Time: 7:30 AM - 5:30 PM</strong></span></h3>                    
+                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Time: 2:30 PM - 5:30 PM</strong></span></h3>                    
                 </div>
             </div>
         </div>
@@ -515,240 +474,114 @@
                 <div class="widget-header">
                     <h2 class="widget-heading">Keynote Speakers</h2>
                     <div class="speakers-container">
-                        <!-- Joshua C. Denny -->
+                        <!-- Young J. Juhn -->
                         <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TranslationalAISummit2024/main/josh.jpg" alt="Joshua C. Denny" class="speaker-photo">
+                            <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Young-Juhn-11558741.jpg" alt="Young J. Juhn" class="speaker-photo">
                             <div>
-                                <h3><strong>Joshua C. Denny</strong></h3>
-                                <h4>MD, MS, FACMI</h4>
-                                <h4>Chief Executive Officer</h4>
-                                <h4>All of Us Research Program, NIH</h4>
+                                <h3><strong>Young J. Juhn</strong></h3>
+                                <h4>MD, MPH, Mayo Clinic</h4>
+                                <h4>Professor of Pediatrics</h4>          
+                                <h4>Director of APPROACH and Precision Population Science Laboratory</h4>
                             </div>
-                        </div>
-                        <!-- Caroline Chung -->
-                        <div class="speaker">
-                            <img src="chung.jpg" alt="Caroline Chung" class="speaker-photo">
-                            <div>
-                                <h3><strong>Caroline Chung</strong></h3>
-                                <h4>MD, MSc., FRCPC, CIP</h4>
-                                <h4>Vice President and Chief Data Officer</h4>
-                                <h4>MD Anderson</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Panel Section -->
-        <div id="panel-discussion" class="widget widget-speakers">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-heading">Panel</h2>
-                    <p class="panel-topic" style="font-size: 1.5em;">Topic: Opportunities and Challenges of Generative AI in Real-world Healthcare Applications</p>
-                </div>
-                <div class="speakers-container">
-                    <!-- Top Row Speakers -->
-                    <div class="speaker">
-                        <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/Bernstam-Elmer.jpg?raw=true" alt="Elmer Bernstam" class="circular-image">
-                        <div>
-                            <h3><strong>Elmer Bernstam</strong></h3>
-                            <h4>MD, UTHealth Houston</h4>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/BenHu.jpg" alt="Xia Hu" class="circular-image">
-                        <div>                                
-                            <h3><strong>Xia Hu</strong></h3>
-                            <h4>PhD, Rice University</h4>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/xiaoqian-jiang.jpg" alt="Xiaoqian Jiang" class="circular-image">
-                        <div>
-                            <h3><strong>Xiaoqian Jiang</strong></h3>
-                            <h4>PhD, UTHealth Houston</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="speakers-container">
-                    <!-- Bottom Row Speakers -->
-                    <div class="speaker">
-                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/LuTang.jpeg" alt="Tang Lu" class="circular-image">
-                        <div>
-                            <h3><strong>Lu Tang</strong></h3>
-                            <h4>PhD, Texas A&M University</h4>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <!-- Add an image source for Kirk Roberts -->
-                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/kirk_roberts240x332.jpg" alt="Kirk Roberts" class="circular-image">
-                        <div>
-                            <h3><strong>Kirk Roberts</strong></h3>
-                            <h4>PhD, UTHealth Houston</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- Invited Speakers Section -->
-        <div id="invited-speakers" class="widget widget-speakers">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-heading">Invited Speakers</h2>
-                    <!-- First row of speakers -->
-                    <div class="speakers-container">
-                        <!-- Babatope O. Fatuyi -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/Fatuyi-Babatope.jpg" alt="Babatope O. Fatuyi" class="circular-image">
-                            <h3><strong>Babatope O. Fatuyi</strong></h3>
-                            <h4>MD, UTHealth Houston</h4>
-                        </div>
-                        <!-- Huiwen Xu -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/Xu-Huiwen.JPG" alt="Huiwen Xu" class="circular-image">
-                            <h3><strong>Huiwen Xu</strong></h3>
-                            <h4>PhD, UT Medical Branch</h4>
-                        </div>
-                        <!-- Akane Sano -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/Akane.jpg" alt="Akane Sano" class="circular-image">
-                            <h3><strong>Akane Sano</strong></h3>
-                            <h4>PhD, Rice University</h4>
-                        </div>                                                
-                    </div>
-                    <!-- Second row of speakers -->
-                    <div class="speakers-container">                        
-                        <!-- Jennifer St. Sauver -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/Jennifer-St-Sauver.jpg" alt="Jennifer St. Sauver" class="circular-image">
-                            <h3><strong>Jennifer St. Sauver</strong></h3>
-                            <h4>PhD, Mayo Clinic</h4>
-                        </div>
-                        <!-- Stephen Yi -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/StephenYi.jpg" alt="Stephen Yi" class="circular-image">
-                            <h3><strong>Stephen Yi</strong></h3>
-                            <h4>PhD, UT Austin</h4>
-                        </div>
-                        <!-- Jia Zeng -->
-                        <div class="speaker">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/Jia.jpg" alt="Jia Zeng" class="circular-image">
-                            <h3><strong>Jia Zeng</strong></h3>
-                            <h4>PhD, MD Anderson</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        
-        <!-- Steering Committee Section -->
-        <div id="steering-committee" class="widget widget-speakers">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-body">Steering Committee</h2>
-                    <table width="100%" style="margin-left:20px">
-                        <tr>
-                            <td style="width:100%;">
-                                <ul class="quote-content">
-                                    <li>Xia Hu, PhD, Rice University</li>
-                                    <li>David Jaffray, PhD, MD Anderson</li>
-                                    <li>Xiaoqian Jiang, PhD, UTHealth Houston</li>
-                                    <li>Lydia E. Kavraki, PhD, Rice University</li>
-                                    <li>Hongfang Liu, PhD, UTHealth Houston</li>
-                                    <li>Kirk Roberts, PhD, UTHealth Houston</li>                                    
-                                    <li>GQ Zhang, PhD, UTHealth Houston</li>
-                                    <li>Jim Zheng, PhD, UTHealth Houston</li>   
-                                </ul>
-                            </td>                          
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- Organizational Committee Section -->
-        <div id="organizational-committee" class="widget widget-speakers">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-body">Organizational Committee</h2>
-                    <table width=100% style="margin-left:20px">
-                        <tr>
-                            <td>
-                                <ul class="quote-content">
-                                    <li>Sunyang Fu, PhD, UTHealth Houston</li>
-                                    <li>Ming Huang, PhD, UTHealth Houston</li>
-                                    <li>Liwei Wang, MD, PhD, UTHealth Houston</li>
-                              </ul>
-                            </td>                            
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- Submissions Section -->
-        <div id="submissions" class="widget widget-speakers">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-body">Submissions</h2>
-                    <div class="submission-section">
-                        <h3 class="submission-title"><strong>Poster</strong></h3>
-                        <p class="quote-content">All researchers working in biomedical and clinical AI fields aiming for Discovery, Translation and Application are invited to submit applications for a poster presentation of their research. Abstracts for the poster presentation must be written in English and should ideally not exceed 500 words.</p>
-                    </div>
-                    <div class="submission-section">
-                        <h3 class="submission-title"><strong>Student research showcase</strong></h3>
-                        <p class="quote-content">Graduate students are invited to submit a 2-page abstract (including figures, tables, and references) for a 10-minute podium presentation on their research in biomedical and clinical AI.</p>
-                    </div>
-                        <p class="quote-content"><strong>Submission format:</strong> single PDF.</p>
-                        <!-- Competition Criteria Section -->
-                        <p class="quote-content"><strong>Competition criteria:</strong> Based on the 2-page abstract submission and presentation, we will select the top three presenters and award them certificates and small prizes. The evaluation criteria for the presentation are threefold: comprehension, novelty, and engagement. The presentation should elucidate the research's background, significance, and key findings in a structured manner suitable for a non-specialist audience, avoiding excessive jargon and ensuring balanced time allocation for each segment. Novelty assesses the originality and innovative nature of the research. Engagement-wise, presenters are expected to pique audience interest without oversimplifying, exude enthusiasm, and demonstrate effective public speaking skills.</p>
-                        <p class="quote-content">The submission is suggested to include the following sections:</p>
-                        <br>
-                        <ul class="quote-content" style="margin-left:40px">
-                            <li><strong>Aims and Objectives</strong> - State the main objective(s) of your project.</li>
-                            <li>
-                                <strong>Justification for the Research Topic</strong> - Explain the motivations for your project.</li>
-                            <li>
-                                <strong>Research Questions</strong> - Stating your research question is essential. This might be done in a list.</li>
-                            <li>
-                                <strong>Research Methodology</strong> - If you already have plans for your research methodology, explain them here. If you have not found an appropriate methodology yet, or wonder which one to choose, this is also the place to mention it. In this case, list the requirements your methodology should fulfill.</li>
-                            <li>
-                                <strong>Research Results to Date</strong> - You are not required to have results. But if you already have some, present them here. </li>
-                            <li><strong>References</strong> – Any citation.</li>
-                        </ul>
-                        <br>       
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ai_Sponsor Section -->
-        <div class="ai_sponsor-section">
-            <h2 class="ai_sponsor-title">Sponsors</h2>
-            <p class="ai_sponsor-thank-you">We thank these organizations for their support. The content is solely managed by the organizers and may not represent the views of these organizations.</p>
-            
-            <div class="ai_sponsor-levels">
-                <div class="silver-ai_sponsor">
-                    <div class="ai_sponsor-logos">
-                        <!-- Sponsor Logo -->
-                        <div class="ai_sponsor">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/ai_sponsor.png?raw=true" alt="ai_Sponsor Logo">
                         </div>                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End of ai_Sponsor Section -->
+              
+<!-- Invited Speakers Section -->
+<div id="invited-speakers" class="widget widget-speakers">
+    <div class="container">
+        <div class="widget-header">
+            <h2 class="widget-heading">Invited Speakers</h2>
 
+            <!-- First row of speakers (2 speakers) -->
+            <div class="speakers-container" style="display: flex; justify-content: center;">
+                <!-- Boris A Reva -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Boris.jpg" alt="Boris A Reva" class="circular-image">
+                    <h3><strong>Boris A Reva</strong></h3>
+                    <h4>PhD, Mount Sinai</h4>
+                </div>
+                <!-- Zhandong Liu -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/zhandonl.jpeg" alt="Zhandong Liu" class="circular-image">
+                    <h3><strong>Zhandong Liu</strong></h3>
+                    <h4>PhD, Baylor College of Medicine</h4>
+                </div>
+            </div>
+
+            <!-- Second row of speakers (2 speakers) -->
+            <div class="speakers-container" style="display: flex; justify-content: center; margin-top: 20px;">
+                <!-- Min Ji Kwak -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Kwak-Min-Ji-web.jpg" alt="Min Ji Kwak" class="circular-image">
+                    <h3><strong>Min Ji Kwak</strong></h3>
+                    <h4>MD, Dr PH, McGovern Medical School</h4>
+                </div>
+                <!-- Nahid J. Rianon -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Rianon-Nahid.jpg" alt="Nahid J. Rianon" class="circular-image">
+                    <h3><strong>Nahid J. Rianon</strong></h3>
+                    <h4>MBBS/MD, DrPH, AGSF, McGovern Medical School</h4>
+                </div>
+            </div>
+
+            <!-- Third row of speakers (3 speakers) -->
+            <div class="speakers-container" style="display: flex; justify-content: space-around; margin-top: 20px;">
+                <!-- Liwei Wang -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/LiweiWang.jpg" alt="Liwei Wang" class="circular-image">
+                    <h3><strong>Liwei Wang</strong></h3>
+                    <h4>MD, PhD, UTHealth, Houston</h4>
+                </div>
+                <!-- Jair Soares -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/soares-jair.jpg" alt="Jair Soares" class="circular-image">
+                    <h3><strong>Jair Soares</strong></h3>
+                    <h4>MD, PhD, McGovern Medical School</h4>
+                </div>
+                <!-- Jinlian Wang -->
+                <div class="speaker">
+                    <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/jinlian-wang.jpg" alt="Jinlian Wang" class="circular-image">
+                    <h3><strong>Jinlian Wang</strong></h3>
+                    <h4>PhD, UTHealth, Houston</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Organizational Committee Section -->
+        <div id="organizational-committee" class="widget widget-speakers">
+            <div class="container">
+                <div class="widget-header">
+                    <h2 class="widget-heading">Organizational Committee</h2>
+                    <div class="speakers-container" style="display: flex; justify-content: space-around;">
+                        <!-- Sunyang Fu -->
+                        <div class="speaker">
+                            <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Sunyang-Fu-332x240.jpg" alt="Sunyang Fu" class="circular-image">
+                            <h3><strong>Sunyang Fu</strong></h3>
+                            <h4>PhD, UTHealth Houston</h4>
+                        </div>
+                        <!-- Ming Huang -->
+                        <div class="speaker">
+                            <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Huang-240X332.jpg" alt="Ming Huang" class="circular-image">
+                            <h3><strong>Ming Huang</strong></h3>
+                            <h4>PhD, UTHealth Houston</h4>
+                        </div>
+                        <!-- Hongfang Liu -->
+                        <div class="speaker">
+                            <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/HongfangLiu-240x332.jpg" alt="Hongfang Liu" class="circular-image">
+                            <h3><strong>Hongfang Liu</strong></h3>
+                            <h4>PhD, UTHealth Houston</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
     </main>
     <!-- CONTACT US -->
     <footer id="contact" class="footer">
@@ -757,19 +590,13 @@
                 <div class="container">
                     <div class="widget-header">
                         <h2 class="widget-heading">Contact Us</h2>
-                        <table >
-                            <tr>
-                                <td>
-                                    <ul class="quote-content" style="padding-left:0; list-style: none; margin-top:-20px">
-                                    <li>
-                                        <h3 style="font-size: 22px;margin-left:20px;color:#fff">
-                                            <a class="contact-a" href="mailto:tmcaisummit@gmail.com">tmcaisummit@gmail.com</a>
-                                        </h3>
-                                    </li>
-                                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+                        <ul class="quote-content" style="padding-left:0; list-style: none; margin-top:-20px">
+                            <li>
+                                <h3 style="font-size: 22px;margin-left:20px;color:#fff">
+                                    <a class="contact-a" href="mailto:tmcaisummit@gmail.com">tmcaisummit@gmail.com</a>
+                                </h3>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -789,6 +616,10 @@
     <div id="scroll">
         <a href="#" id="scroll-up" style="display: none;"><img src="./scrollup.png" alt>TOP</a>
     </div>
+
+    
+
 </body>
 
 </html>
+                        
