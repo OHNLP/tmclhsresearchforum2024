@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>TMC Learning Health System Research Forum 2024</title>
+    <link rel="apple-touch-icon" href="http://conveyux.com/wp-content/uploads/conveyux-apple-touch-icon.png">
+    <title>TMC learning health system Research Forum 2024</title>
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="TMC Learning Health System Research Forum 2024">
-    <meta property="og:site_name" content="TMC Learning Health System Research Forum 2024">
-    
+    <meta property="og:title" content="TMC AI Summit 2024">
+    <meta property="og:site_name" content="TMC AI Summit 2024">
     <style type="text/css">
-    /* General Styles */
-    body {
-        font-family: 'Ubuntu', sans-serif;
-        padding-top: 6px;
+    /* Make the header fixed at the top of the viewport */
+    header.nav.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensures header stays on top */
+        background-color: white; /* Adds a background color to ensure content beneath doesn’t show through */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow to the header */
     }
-    
-    /* Center Header Image */
+
+    /* Add padding to the body to prevent content from being hidden behind the fixed header */
+    body {
+        padding-top: 6px; /* Adjust this value depending on the height of the header */
+    }
+
+    /* Style for the navigation menu links */
+    .navbar-menu a {
+        font-size: 26px; /* Increase font size as needed */
+        font-weight: bold; /* Make font weight bold for better readability */
+        color: #333; /* Adjust color if needed */
+        padding: 10px 15px; /* Add padding to increase the clickable area and spacing */
+        text-decoration: none; /* Optional: removes underline from links */
+    }
+
+    .contact-a, .contact-a:hover {
+        margin-top: 22px;
+        margin-bottom: 11px;
+        font-size: 21px;
+        text-decoration: none;
+        color: rgba(83, 192, 247, 0.91);
+    }
+
+    /* Adjust the size of the logo here */
+    .header-logo-img {
+        width: 300px; /* You can change this value to adjust the size */
+    }
+
+    /* Style for widget titles */
+    .widget-heading {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Resize the header image and text to fill more width */
     .hero-container img {
         width: 100%;
         height: auto;
         margin: 0;
     }
-
+    
     /* Ensure the main heading spans across a single line and increase the font size */
     h2.widget-heading {
-        font-size: 32px; /* Adjust the title size */
+        font-size: 40px; /* Make the title bigger */
         font-weight: bold;
         text-align: center;
-        margin: 20px 0;
+        margin: 20px 0; /* Adjust margin to center the title */
     }
     
-    /* Expand the content width */
+    /* Increase the width of the central content area */
     .widget-description .container {
-        max-width: 1200px; /* Increase the container width */
+        max-width: 1000px; /* Widen the container */
         padding: 20px;
-        margin: 0 auto; /* Center the container */
     }
-
+    
+    /* Adjust spacing between text and images */
+    .carousel.slide {
+        margin-top: 10px; /* Reduce the space above the carousel */
+    }
+    
     /* Reduce the empty space around the "Program" and "Registration" buttons */
     .widget-description .container div {
         margin: 10px auto;
     }
-
-    /* Increase text area width and center */
-    .quote-content {
+    
+    /* Adjust flex layout to ensure alignment between invited speakers and organizational committee */
+    .speakers-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         max-width: 1200px;
-        margin: 20px auto;
-        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    /* Buttons styling */
-    .widget-description a {
-        font-size: 20px;
-        background-color: #006791;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
+    
+    /* Align images of invited speakers and organizational committee members */
+    #organizational-committee .speakers-container,
+    #invited-speakers .speakers-container {
+        justify-content: space-evenly; /* Ensure the spacing is even */
     }
-
-    .widget-description a[href$=".pdf"] {
-        color: blue;
-        text-decoration: underline;
-    }
-
-    /* Media Queries for Mobile Screens */
+    
+    /* Make sure the layout stays flexible on smaller screens */
     @media only screen and (max-width: 600px) {
-        h2.widget-heading {
-            font-size: 24px;
+        .widget-heading {
+            font-size: 24px; /* Adjust the title size for small screens */
         }
         
-        .widget-description .container {
-            max-width: 100%;
-        }
-        
-        .quote-content {
-            max-width: 100%;
+        /* Align speaker images better on small screens */
+        .speakers-container {
+            flex-direction: column;
+            align-items: center;
         }
     }
+
 
     /* Reduce space between the list item and its nested list */
     .quote-content li + ul {
@@ -99,25 +138,24 @@
         height: 200px; /* Height of the image */
         border-radius: 50%; /* Makes the image round */
         object-fit: cover; /* This will cover the area of the container without stretching the image */
-        object-position: center; /* Adjust this value if you need to move the image */
+        object-position: center 0.00006%; /* Adjust this value if you need to move the image up or down to show the hair */
         margin-bottom: 10px; /* Space between the image and the text */
     }
-
     /* Adjustments to panel discussion speaker elements */
     #panel-discussion .speaker .circular-image {
         margin-left: 5px; /* Adjust this value as needed to move the images to the right */
     }
-    
+    /* Adjust speaker info styles if necessary */
     /* Style for Keynote Speaker names to match Invited Speakers */
     .speaker-info {
         margin: 0.5em 0;
         font-size: 16px; /* Adjusted font size to match Invited Speakers */
-        font-family: 'Ubuntu', sans-serif;
-        text-align: left;
-        color: #333;
-        width: 100%;
-        display: block;
-        margin-left: 30px;
+        font-family: 'Ubuntu', sans-serif; /* Using Ubuntu font for consistency */
+        text-align: left; /* Align text to the left */
+        color: #333; /* Adjusted color to match Invited Speakers */
+        width: 100%; /* Ensure the container takes the full width of the parent */
+        display: block; /* This will allow you to apply margin and text-align */
+        margin-left: 30px; /* Increase the left margin to move the names to the right */
     }
     
     /* Additional styles for the title and position */
@@ -137,135 +175,352 @@
         justify-content: space-between; /* Adjust this to manage space between speaker photos */
         align-items: center;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        max-width: 1200px;
+        margin-left: auto; /* Aligns with the left edge of the parent container */
+        margin-right: auto; /* Aligns with the right edge of the parent container */
+        margin-top: 40px; /* Increase the top margin to add more space */
+        max-width: 1200px; /* Adjust the max-width to match the width of your header */
         width: 100%;
-        padding-left: 20px;
+        padding-left: 20px; /* Increase the left padding to push content to the right */
     }
 
     /* Adjustments to speaker elements */
     .speaker {
-        flex: 1;
-        margin: 0 15px;
+        flex: 1; /* Allows equal spacing and takes up equal space */
+        margin: 0 15px; /* Adds space between speaker elements */
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        margin-right: 15px;
+        text-align: center; /* Center align text for each speaker info */
+        margin-right: 15px; /* Add some margin to the right of each speaker container */
     }
-
     .speaker-info-container {
         /* If additional styling is needed for the container holding the text */
     }
-
     .widget-speakers .speaker-photo {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        object-position: center;
+        object-position: center 10%; /* Adjust this to ensure hair is visible */
         margin-right: 10px;
-        margin-bottom: 10px;
-        margin-left: 20px;
+        margin-bottom: 10px; /* Space between the image and the text below */
+        margin-left: 20px; /* Increase the left margin if needed for individual speaker photos */
+    }
+    /* Adjustments to the Invited Speakers container */
+    #invited-speakers .speakers-container {
+        display: flex;
+        justify-content: space-between; /* Align the items to the start of the container */
+        align-items: center;
+        text-align: center;
+        margin-left: auto; /* Aligns with the left edge of the parent container */
+        margin-right: auto; /* Aligns with the right edge of the parent container */
+        max-width: 1200px; /* Adjust the max-width to match the width of your header */
+        width: 100%;
+        padding-left: 20px; /* Increase the left padding to push content to the right */
+    }
+    /* Adjustments to the Invited Speakers images to move them to the right */
+    #invited-speakers .speaker .circular-image {
+        margin-left: 5px; /* Adjust this value as needed to move the images to the right */
+    }
+    /* Add bottom margin to the Important Dates section */
+    #program .widget-header {
+        margin-bottom: 20px; /* Increase this value as needed */
+    }
+    
+    /* Or add top margin to the Keynote Speakers section */
+    #keynote-speakers .widget-header {
+        margin-top: 20px; /* Increase this value as needed */
+        margin-bottom: 20px; /* Adjust this value as needed */
+    }
+    /* Add bottom margin to the Keynote Speakers section */
+       
+    /* Or add top margin to the Panel Discussion section */
+    #panel-discussion .widget-header {
+        margin-top: 20px; /* Adjust this value as needed */
+        margin-bottom: 20px; /* Adjust this value as needed */
+    }
+    /* Add bottom margin to the Panel Discussion section */
+    
+    /* Or add top margin to the Invited Speakers section */
+    #invited-speakers .widget-header {
+        margin-top: 20px; /* Adjust this value as needed */
+    }
+
+    /* Sponsorship Section Styles */
+    .ai_sponsor-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .ai_sponsor-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .ai_sponsor-levels > div {
+        margin-bottom: 40px;
+    }
+    
+    .ai_sponsor-levels h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .ai_sponsor-logos {
+        display: flex;
+        justify-content: center; /* Center the logos horizontally */
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .ai_sponsor {
+        display: flex; /* This will apply flexbox properties to the .sponsor class */
+        justify-content: center; /* This will center the logo horizontally */
+        align-items: center; /* This will center the logo vertically */
+        flex-direction: column; /* This stacks the logo and any text vertically */
+    }
+    
+    .ai_sponsor img {
+        max-width: 60%; /* Ensures the logo fits within its container */
+        height: auto; /* This will maintain the aspect ratio of the image */
+        object-fit: contain; /* Ensure the logo fits within its box without being cut off */
+        margin: 20px auto; /* Center the logo vertically and horizontally in its container */
     }
     
     /* Media queries for mobile devices */
     @media only screen and (max-width: 600px) {
+        /* Adjust the size of the circular images for smaller screens */
         .circular-image {
             width: 120px;
             height: 120px;
         }
-
+    
+        /* Adjust the layout of speaker containers to ensure they line up as intended */
         .speakers-container {
-            flex-direction: column;
-            align-items: center;
+            flex-direction: column; /* Stack them on small screens to prevent layout issues */
+            align-items: center; /* Center-align the items */
         }
-
+    
+        /* If you want the panel and invited speakers to appear in a row, adjust this part */
         .speaker {
-            width: 100%;
+            width: 100%; /* Full width to center-align the content */
             display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
+            justify-content: center; /* Center the images */
+            margin-bottom: 20px; /* Add some space between the speakers */
+        }
+    
+        /* For horizontal alignment of images in a row on mobile devices, you might need a specific class or adjust this part */
+        .panel-speaker, .invited-speaker {
+            display: inline-flex; /* Use inline-flex to keep them in a row */
+            justify-content: space-around; /* Distribute space around items */
         }
 
+        /* Adjustments for sponsor logos on smaller screens */
         .ai_sponsor img {
-            max-width: 80%;
-            height: auto;
-            object-fit: contain;
-            margin: 10px auto;
+            max-width: 80%; /* Adjust logo width to ensure it fits within the screen, change as needed */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure the logo fits within its box without being cut off */
+            margin: 10px auto; /* Center the logo and provide some spacing */
         }
 
+        /* Ensuring the container is centered on mobile screens */
         .widget-description .container {
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
-        .widget-description .container a {
-            font-size: 1em;
-            background-color: #006791;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 0;
+    
+        /* Styling for the 'Registration' button to match the 'Program' link */
+        .widget-description .container a[href*="google.com"] {
+            font-size: 1em; /* Adjust the font size */
+            background-color: #006791; /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px 20px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
             text-align: center;
         }
-
+    
+        /* Styling for the 'Program' link to match the 'Registration' button */
         .widget-description .container a[href$=".pdf"] {
-            font-size: 1em;
-            color: blue;
-            text-decoration: underline;
-            display: inline-block;
-            margin: 10px 0;
+            font-size: 1em; /* Adjust the font size */
+            color: blue; /* Link color */
+            text-decoration: underline; /* Underline text */
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
             text-align: center;
+        }
+    
+        /* Corrects the button and link stacking on mobile */
+        .widget-description .container > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }    
+        
+   /* Add the new media query CSS here */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .navbar-menu a {
+            font-size: 10px; /* Smaller font size */
+            padding: 8px 10px; /* Adjust padding */
+        }
+    
+        .widget-heading {
+            font-size: 18px; /* Smaller heading for widgets */
+        }
+    
+        .speakers-container {
+            flex-direction: column; /* Stack speaker photos vertically */
+            padding-left: 0; /* Remove left padding */
+        }
+    
+        .speaker-photo {
+            width: 150px; /* Smaller speaker photos */
+            height: 150px; /* Keep aspect ratio */
+        }
+    
+        .ai_sponsor img {
+            max-width: 250px; /* Adjust the logo size for medium screens */
+            margin: 0 auto; /* Center the logo if necessary */
+        }
+        
+        .circular-image {
+            width: 150px; /* Adjusted width */
+            height: 150px; /* Adjusted height to match the width */
+            border-radius: 50%; /* This ensures the image remains round */
+            object-fit: cover; /* Keeps the aspect ratio of the image */
+        }
+    
+        /* Adjusting the layout for smaller screens */
+        .container {
+            padding: 0 5%; /* Add padding to the container */
+        }
+
+        /* Further adjustments for panel and invited speakers if they need to be in a row on larger screens */
+        .panel-speaker, .invited-speaker {
+            display: flex; /* Keep using flex for alignment */
+            justify-content: space-around; /* Adjust spacing as needed */
+        }
+
+        /* Adjustments for the Triomics logo to prevent it from being cut off */
+        .ai_sponsor img {
+            max-width: 100%; /* Allows the logo to scale down to fit the container width */
+            height: auto; /* Maintains the aspect ratio of the logo */
+            margin: 0 auto; /* Center the logo horizontally */
         }
     }
-    
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+    <link rel="stylesheet" id="contact-form-7-css" href="./styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="NextGEN-css" href="./nggallery.css" type="text/css" media="screen">
+    <link rel="stylesheet" id="NextCellent-Framework-css" href="./framework-min.css" type="text/css" media="screen">
+    <link rel="stylesheet" id="tyler-google-font-css" href="./css(1)" type="text/css" media="all">
+    <link rel="stylesheet" id="conveyux-google-font-css" href="./css(2)" type="text/css" media="all">
+    <link rel="stylesheet" id="tyler-blueimp-gallery-css" href="./blueimp-gallery.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="tyler-jquery-scrollpane-css" href="./jquery.scrollpane.css" type="text/css" media="all">
+    <link rel="stylesheet" id="tyler-icons-css" href="./icon.css" type="text/css" media="all">
+    <link rel="stylesheet" id="convey-layout-css" href="./style(1).css" type="text/css" media="all">
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./external-tracking.min.js"></script>
+    <link rel="https://api.w.org/" href="http://conveyux.com/wp-json/">
 </head>
 
+   
 <body class="home blog">
+<!--
+<header class="nav header">
+   <div class="header-container">
+       <img src="https://github.com/OHNLP/tmclhsresearchforum2024/raw/main/header-fig.jpg" alt="TMC Learning Health System Research Forum 2024 Header" />
+       <nav class="navbar" role="navigation">
+           <div class="collapse navbar-collapse" id="tyler-navigation">
+               <div class="menu-current-container">
+                   <ul id="menu-primary" class="navbar-menu">
+                       <li class="menu-item"><a href="#">About Us</a></li>
+                       <li class="menu-item"><a href="#keynote-speakers">Keynote Speakers</a></li>
+                       <li class="menu-item"><a href="#invited-speakers">Invited Speakers</a></li>
+                       <li class="menu-item"><a href="#organizational-committee">Organizational Committee</a></li>
+                       <li class="menu-item"><a href="#contact">Contact Us</a></li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </div>
+</header>
+-->
+
     
+    
+    
+
     <main id="main">
-        <div class="hero-container">
-            <img src="path_to_image.png" alt="TMC Learning Health System Research Forum 2024 Header">
+  <div class="hero-container">
+            <div class="carousel slide" id="hero-carousel" data-ride="carousel" data-interval="6000">
+                <div class="carousel-inner" role="listbox" id="item-img">
+                    <div class="item active">
+                        <img class="hero-carousel" style="width: 90%; margin: auto" src="./ICIBM.png" alt>
+                    </div>
+                </div>
+                <ol class="carousel-indicators" style="bottom:50px">
+                    <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#hero-carousel" data-slide-to="1"></li>
+                </ol>
+            </div>
         </div>
-        
+       
         <!-- Welcome Section -->
         <div id="text" class="widget widget-description">
             <div class="container">
-                <h2 class="widget-heading">Welcome to TMC Learning Health System Research Forum 2024</h2>
-                <div style="margin-top: 20px; text-align: center;">
-                    <a href="TMC_LHS_ResearchForum_24_Program.pdf" target="_blank">The whole program goes here!</a>
-                </div>
-                <div style="width:300px; background-color:#006791; margin:20px auto; border-radius: 4px;">
-                    <a href="https://forms.gle/rYzEUPZhAig4pQUE9">Registration</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Section (Text Fill) -->
-        <div id="introduction" class="widget widget-speakers">
-            <div class="quote-content">
-                <p>The vision of learning precision health is to leverage technology, data analytics, and evidence-based practices to create a feedback loop that continuously informs and improves healthcare delivery, policy, and practice. The goal is to prevent disease occurrence, detect diseases earlier, and advance human health.</p>
+                <div class="col-md-8 col-md-push-2">
+                    <h2 class="widget-heading">Welcome to TMC Learning Health System Research Forum 2024</h2>
 
-                <p>This workshop will provide an overview of learning precision health, highlighting the role of real-world evidence in improving patient outcomes. Participants will gain insights into the foundational principles of learning precision health, the technologies that support them, and practical steps for their implementation in cancer, aging, psychiatry, and rare diseases.</p>
+                    <!-- Program View -->
+                    <div style="margin-top: 20px; text-align: center;">
+                        <a href="TMC_LHS_ResearchForum_24_Program.pdf" target="_blank" style="font-size: 20px; color: blue; text-decoration: underline;">The whole program goes here!</a>
+                    </div>
+
+                    <!-- Existing Registration Link -->
+                    <div style="width:300px; background-color:#006791; margin-left:30%; border-radius: 4px; margin-top: 20px;">
+                        <a style="font-family:Ubuntu;color: #fff; font-size:28px; margin:0 11px; text-decoration: none;" href="https://forms.gle/rYzEUPZhAig4pQUE9">Registration</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         
-        <!-- Important Dates -->
+<!-- Rest of the HTML content continues here... -->
+        
+        
+        <!-- Overview -->
+        <div id="introduction" class="widget widget-speakers">
+            <div class="container">
+                <div class="widget-header">
+                       <!-- <h2 class="widget-body">About Us</h2> -->
+                    <p class="quote-content">The vision of the learning precision health is to leverage technology, data analytics, and evidence-based practices to create a feedback loop that continuously informs and improves healthcare delivery, policy, and practice, with the goals of preventing disease occurrence, detecting diseases earlier, and advancing human health. Rapid advances in computing generally and artificial intelligence (AI) specifically, suggest that data collection, analysis and modelling will be increasingly important to learning precision health. This workshop will provide a comprehensive overview of learning precision health, highlighting the role of real-world evidence in improving patient outcomes and healthcare efficiency. Participants will gain insights into the foundational principles of learning precision health, the technologies that support them, and practical steps for their implementation, especially in the domains of cancer, aging, psychiatry and rare diseases. Through interactive sessions and expert presentations, attendees will learn how to leverage data science, informatics and AI to create a continuous learning environment within their healthcare organizations.</p>                    
+        <!-- Program -->
+       
         <div id="program" class="widget widget-speakers">
             <div class="container">
-                <h2 class="widget-heading">Important Dates</h2>
-                <h3><strong>Conference date: October 10, 2024</strong></h3>
-                <h3><strong>Time: 2:30 PM - 5:30 PM</strong></h3>
+                <div class="widget-header">
+                    <h2 class="widget-body">Important Dates</h2>
+                                       
+                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Conference date: October 10, 2024</strong></span></h3>
+        
+                    <h3 style="margin-left:20px"><strong><span style="font-size:20px">Time: 2:30 PM - 5:30 PM</strong></span></h3>                    
+                </div>
             </div>
         </div>
 
+        
         <!-- Keynote Speakers Section -->
         <div id="keynote-speakers" class="widget widget-speakers">
             <div class="container">
@@ -278,10 +533,10 @@
                             <div>
                                 <h3><strong>Young J. Juhn</strong></h3>
                                 <h4>MD, MPH, Mayo Clinic</h4>
-                                <h4>Professor of Pediatrics</h4>
+                                <h4>Professor of Pediatrics</h4>          
                                 <h4>Director of APPROACH and Precision Population Science Laboratory</h4>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
