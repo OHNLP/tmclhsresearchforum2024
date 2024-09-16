@@ -58,13 +58,66 @@
         margin-bottom: 40px;
     }
 
-    /* Adjustments for header figure */
-    .header-container img {
-        width: 50%;
+    /* Resize the header image and text to fill more width */
+    .hero-container img {
+        width: 100%;
         height: auto;
-        margin: 0 auto;
-        display: block;
+        margin: 0;
     }
+    
+    /* Ensure the main heading spans across a single line and increase the font size */
+    h2.widget-heading {
+        font-size: 40px; /* Make the title bigger */
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0; /* Adjust margin to center the title */
+    }
+    
+    /* Increase the width of the central content area */
+    .widget-description .container {
+        max-width: 1000px; /* Widen the container */
+        padding: 20px;
+    }
+    
+    /* Adjust spacing between text and images */
+    .carousel.slide {
+        margin-top: 10px; /* Reduce the space above the carousel */
+    }
+    
+    /* Reduce the empty space around the "Program" and "Registration" buttons */
+    .widget-description .container div {
+        margin: 10px auto;
+    }
+    
+    /* Adjust flex layout to ensure alignment between invited speakers and organizational committee */
+    .speakers-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Align images of invited speakers and organizational committee members */
+    #organizational-committee .speakers-container,
+    #invited-speakers .speakers-container {
+        justify-content: space-evenly; /* Ensure the spacing is even */
+    }
+    
+    /* Make sure the layout stays flexible on smaller screens */
+    @media only screen and (max-width: 600px) {
+        .widget-heading {
+            font-size: 24px; /* Adjust the title size for small screens */
+        }
+        
+        /* Align speaker images better on small screens */
+        .speakers-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
 
     /* Reduce space between the list item and its nested list */
     .quote-content li + ul {
