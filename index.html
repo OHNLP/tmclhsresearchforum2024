@@ -46,7 +46,7 @@
 
     /* Adjust the size of the logo here */
     .header-logo-img {
-        width: 200px; /* You can change this value to adjust the size */
+        width: 300px; /* You can change this value to adjust the size */
     }
 
     /* Style for widget titles */
@@ -58,70 +58,13 @@
         margin-bottom: 40px;
     }
 
-    /* Resize the header image and text to fill more width */
-    .hero-container img {
-        width: 100%;
+    /* Adjustments for header figure */
+    .header-container img {
+        width: 50%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
+        display: block;
     }
-    
-    /* Ensure the main heading spans across a single line and increase the font size */
-    h2.widget-heading {
-        font-size: 60px; /* Make the title bigger */
-        font-weight: bold;
-        text-align: center;
-        margin: 20px 0; /* Adjust margin to center the title */
-        white-space: nowrap; /* Ensures the text stays on one line */
-        text-align: left; /* Move the title to the left */
-        max-width: 75%; /* Control the width to fit nicely */
-        margin-left: 15%; /* Ensure it's centered */
-    }
-    
-    /* Increase the width of the central content area */
-    .widget-description .container {
-        max-width: 1600px; /* Widen the container */
-        padding: 20px;
-    }
-    
-    /* Adjust spacing between text and images */
-    .carousel.slide {
-        margin-top: 10px; /* Reduce the space above the carousel */
-    }
-    
-    /* Reduce the empty space around the "Program" and "Registration" buttons */
-    .widget-description .container div {
-        margin: 10px auto;
-    }
-    
-    /* Adjust flex layout to ensure alignment between invited speakers and organizational committee */
-    .speakers-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    /* Align images of invited speakers and organizational committee members */
-    #organizational-committee .speakers-container,
-    #invited-speakers .speakers-container {
-        justify-content: space-evenly; /* Ensure the spacing is even */
-    }
-    
-    /* Make sure the layout stays flexible on smaller screens */
-    @media only screen and (max-width: 600px) {
-        .widget-heading {
-            font-size: 24px; /* Adjust the title size for small screens */
-        }
-        
-        /* Align speaker images better on small screens */
-        .speakers-container {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
 
     /* Reduce space between the list item and its nested list */
     .quote-content li + ul {
@@ -187,12 +130,6 @@
         padding-left: 20px; /* Increase the left padding to push content to the right */
     }
 
-    /* Align images of invited speakers and organizational committee members */
-    #organizational-committee .speakers-container,
-    #invited-speakers .speakers-container {
-        justify-content: space-evenly;
-    }
-        
     /* Adjustments to speaker elements */
     .speaker {
         flex: 1; /* Allows equal spacing and takes up equal space */
@@ -227,13 +164,11 @@
         max-width: 1200px; /* Adjust the max-width to match the width of your header */
         width: 100%;
         padding-left: 20px; /* Increase the left padding to push content to the right */
-    }  
-        
+    }
     /* Adjustments to the Invited Speakers images to move them to the right */
     #invited-speakers .speaker .circular-image {
         margin-left: 5px; /* Adjust this value as needed to move the images to the right */
     }
-    
     /* Add bottom margin to the Important Dates section */
     #program .widget-header {
         margin-bottom: 20px; /* Increase this value as needed */
@@ -246,13 +181,60 @@
     }
     /* Add bottom margin to the Keynote Speakers section */
        
-       
+    /* Or add top margin to the Panel Discussion section */
+    #panel-discussion .widget-header {
+        margin-top: 20px; /* Adjust this value as needed */
+        margin-bottom: 20px; /* Adjust this value as needed */
+    }
+    /* Add bottom margin to the Panel Discussion section */
+    
     /* Or add top margin to the Invited Speakers section */
     #invited-speakers .widget-header {
         margin-top: 20px; /* Adjust this value as needed */
     }
 
+    /* Sponsorship Section Styles */
+    .ai_sponsor-section {
+        text-align: center;
+        padding: 50px 0;
+    }
     
+    .ai_sponsor-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .ai_sponsor-levels > div {
+        margin-bottom: 40px;
+    }
+    
+    .ai_sponsor-levels h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .ai_sponsor-logos {
+        display: flex;
+        justify-content: center; /* Center the logos horizontally */
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .ai_sponsor {
+        display: flex; /* This will apply flexbox properties to the .sponsor class */
+        justify-content: center; /* This will center the logo horizontally */
+        align-items: center; /* This will center the logo vertically */
+        flex-direction: column; /* This stacks the logo and any text vertically */
+    }
+    
+    .ai_sponsor img {
+        max-width: 60%; /* Ensures the logo fits within its container */
+        height: auto; /* This will maintain the aspect ratio of the image */
+        object-fit: contain; /* Ensure the logo fits within its box without being cut off */
+        margin: 20px auto; /* Center the logo vertically and horizontally in its container */
+    }
     
     /* Media queries for mobile devices */
     @media only screen and (max-width: 600px) {
@@ -311,7 +293,6 @@
             text-align: center;
         }
     
-        <!--
         /* Styling for the 'Program' link to match the 'Registration' button */
         .widget-description .container a[href$=".pdf"] {
             font-size: 1em; /* Adjust the font size */
@@ -322,7 +303,6 @@
             width: auto; /* Auto width based on content */
             text-align: center;
         }
-        -->
     
         /* Corrects the button and link stacking on mobile */
         .widget-description .container > div {
@@ -423,18 +403,26 @@
    </div>
 </header>
 -->
+
     
+    
+    
+
     <main id="main">
-        <div class="hero-container">
+  <div class="hero-container">
             <div class="carousel slide" id="hero-carousel" data-ride="carousel" data-interval="6000">
                 <div class="carousel-inner" role="listbox" id="item-img">
                     <div class="item active">
                         <img class="hero-carousel" style="width: 90%; margin: auto" src="./ICIBM.png" alt>
                     </div>
                 </div>
+                <ol class="carousel-indicators" style="bottom:50px">
+                    <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#hero-carousel" data-slide-to="1"></li>
+                </ol>
             </div>
         </div>
-
+       
         <!-- Welcome Section -->
         <div id="text" class="widget widget-description">
             <div class="container">
@@ -446,15 +434,13 @@
                         <a href="TMC_LHS_ResearchForum_24_Program.pdf" target="_blank" style="font-size: 20px; color: blue; text-decoration: underline;">The whole program goes here!</a>
                     </div>
 
-                    <!-- Registration Link -->
+                    <!-- Existing Registration Link -->
                     <div style="width:300px; background-color:#006791; margin-left:30%; border-radius: 4px; margin-top: 20px;">
                         <a style="font-family:Ubuntu;color: #fff; font-size:28px; margin:0 11px; text-decoration: none;" href="https://forms.gle/rYzEUPZhAig4pQUE9">Registration</a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-</body>
 
 
         
@@ -571,22 +557,21 @@
             <div class="container">
                 <div class="widget-header">
                     <h2 class="widget-heading">Organizational Committee</h2>
-                    <!-- Speakers Container with Flexbox Layout and Alignment -->
-                    <div class="speakers-container" style="display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="speakers-container" style="display: flex; justify-content: space-around;">
                         <!-- Sunyang Fu -->
-                        <div class="speaker" style="flex: 1; margin: 0 15px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="speaker">
                             <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Sunyang-Fu-332x240.jpg" alt="Sunyang Fu" class="circular-image">
                             <h3><strong>Sunyang Fu</strong></h3>
                             <h4>PhD, UTHealth Houston</h4>
                         </div>
                         <!-- Ming Huang -->
-                        <div class="speaker" style="flex: 1; margin: 0 15px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="speaker">
                             <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/Huang-240X332.jpg" alt="Ming Huang" class="circular-image">
                             <h3><strong>Ming Huang</strong></h3>
                             <h4>PhD, UTHealth Houston</h4>
                         </div>
                         <!-- Hongfang Liu -->
-                        <div class="speaker" style="flex: 1; margin: 0 15px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="speaker">
                             <img src="https://raw.githubusercontent.com/OHNLP/tmclhsresearchforum2024/main/HongfangLiu-240x332.jpg" alt="Hongfang Liu" class="circular-image">
                             <h3><strong>Hongfang Liu</strong></h3>
                             <h4>PhD, UTHealth Houston</h4>
@@ -594,8 +579,7 @@
                     </div>
                 </div>
             </div>
-        </
-
+        </div>
 
        
     </main>
@@ -638,4 +622,3 @@
 </body>
 
 </html>
-                        
