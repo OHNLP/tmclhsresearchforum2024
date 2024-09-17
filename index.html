@@ -303,14 +303,6 @@
             justify-content: space-around; /* Distribute space around items */
         }
 
-        /* Adjustments for sponsor logos on smaller screens */
-        .ai_sponsor img {
-            max-width: 80%; /* Adjust logo width to ensure it fits within the screen, change as needed */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensure the logo fits within its box without being cut off */
-            margin: 10px auto; /* Center the logo and provide some spacing */
-        }
-
         /* Ensuring the container is centered on mobile screens */
         .widget-description .container {
             text-align: center;
@@ -340,7 +332,7 @@
         /* Styling for the 'Program' link to match the 'Registration' button */
         .widget-description .container a[href$=".pdf"] {
             font-size: 1em; /* Adjust the font size */
-            color: blue; /* Link color */
+            color: #7D708f; /* Link color-Dusty Lavender */
             text-decoration: underline; /* Underline text */
             display: inline-block; /* Align with other inline elements */
             margin: 10px 0; /* Margin top and bottom */
@@ -353,7 +345,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%; /* Ensures both elements take full width */
+            margin: 10px 0; /* Adds some space between them */
         }
+        .widget-description .container a {
+        display: block;
+        width: 80%; /* Adjust the width of both elements */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; /* Center the text */
+    }
+
+    /* For the Registration button specifically */
+    .widget-description .container .registration-button {
+        width: 80%; /* Adjust width for better alignment */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 10px 20px;
+    }
     }    
         
    /* Add the new media query CSS here */
