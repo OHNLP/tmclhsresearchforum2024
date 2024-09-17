@@ -24,7 +24,11 @@
 
     @font-face {
         font-family: 'Univers Standard';
-        src: url('path-to-your-font/UniversStandard.ttf') format('truetype'); /* Replace with the actual path to the font */
+        src: url('path-to-your-font/UniversStandard.woff2') format('woff2'),
+             url('path-to-your-font/UniversStandard.woff') format('woff'),
+             url('path-to-your-font/UniversStandard.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
     }
 
     /* Apply the Univers Standard font to the entire body */
