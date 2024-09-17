@@ -173,11 +173,25 @@
     /* Adjustments to the Organizational Committee container */
     #organizational-committee .speakers-container {
         display: flex;
-        justify-content: space-between; /* Space between the committee members */
+        justify-content: space-around;
         align-items: center;
-        margin-left: 30px; /* Adds a bit of left margin */
-        margin-right: 30px; /* Adds a bit of right margin */
-    }    
+        margin-top: 20px;
+    }
+    
+    #organizational-committee .speaker {
+        width: 250px; /* Set the width same as invited speakers */
+        text-align: center; /* Center the text */
+    }
+    
+    #organizational-committee .circular-image {
+        margin-left: 0; /* Center the image */
+    }
+    
+    #organizational-committee h3, 
+    #organizational-committee h4 {
+        margin: 0; /* Remove extra margin */
+    }
+    
         
     /* Add bottom margin to the Important Dates section */
     #program .widget-header {
