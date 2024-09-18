@@ -36,11 +36,11 @@
         font-family: 'Univers Standard', sans-serif;
     }
 
-    /* Button styling for Register Now and Program */
-    .button-register {
+    /* Program Button styling - University Orange */
+    .button-program {
         font-family: 'Ubuntu', sans-serif;
         color: white;
-        background-color: #ae6042;
+        background-color: #ae6042; /* University Orange */
         font-size: 28px;
         padding: 10px 20px;
         border-radius: 4px;
@@ -49,10 +49,29 @@
         text-align: center;
     }
     
-    /* Button hover effect */
+    /* Program Button hover effect */
+    .button-program:hover {
+        background-color: #933e2c; /* Darker shade of orange */
+    }
+    
+    /* Register Now Button styling - University Blue */
+    .button-register {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        background-color: #4e738a; /* University Blue */
+        font-size: 28px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    /* Register Now Button hover effect */
     .button-register:hover {
-        background-color: #00547a; /* Darker shade of blue */
-    }  
+        background-color: #3d5c6b; /* Darker shade of blue */
+    }
+  
 
     /* Other styling remains unchanged */
     .navbar-menu a {
@@ -498,15 +517,13 @@
 
                     <!-- Program View as a Button -->
                     <div style="text-align: center; margin-top: 20px;">
-                        <button class="button-register" onclick="window.location.href='TMC_LHS_ResearchForum_24_Program.pdf'">View Program</button>
+                        <button class="button-program" onclick="window.location.href='TMC_LHS_ResearchForum_24_Program.pdf'">View Program</button>
                     </div>
-
                     
                     <!-- Register Now Button -->
                     <div style="text-align: center; margin-top: 20px;">
                         <button class="button-register" onclick="window.location.href='https://forms.gle/rYzEUPZhAig4pQUE9'">Register Now</button>
                     </div>
-
                 </div>
             </div>
         </div>
