@@ -36,6 +36,24 @@
         font-family: 'Univers Standard', sans-serif;
     }
 
+    /* Button styling for Register Now and Program */
+    .button-register {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        background-color: #006791;
+        font-size: 28px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    /* Button hover effect */
+    .button-register:hover {
+        background-color: #00547a; /* Darker shade of blue */
+    }
+
     /* Button styling for Register Now */
     .button-register {
         font-family: 'Ubuntu', sans-serif;
@@ -497,10 +515,11 @@
                 <div class="col-md-8 col-md-push-2">
                     <h2 class="widget-heading">Welcome to TMC Learning Health System Research Forum 2024</h2>
 
-                    <!-- Program View -->
-                    <div style="margin-top: 20px; text-align: center;">
-                        <a href="TMC_LHS_ResearchForum_24_Program.pdf" target="_blank" style="font-size: 36px; color: #7D708f; text-decoration: underline;">Program</a>
+                    <!-- Program View as a Button -->
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="button-register" onclick="window.location.href='TMC_LHS_ResearchForum_24_Program.pdf'">View Program</button>
                     </div>
+
                     
                     <!-- Register Now Button -->
                     <div style="text-align: center; margin-top: 20px;">
