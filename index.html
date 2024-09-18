@@ -36,6 +36,25 @@
         font-family: 'Univers Standard', sans-serif;
     }
 
+    /* Button styling for Register Now */
+    .button-register {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        background-color: #006791;
+        font-size: 28px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    /* Button hover effect */
+    .button-register:hover {
+        background-color: #00547a; /* Darker shade of blue */
+    }
+    
+
     /* Other styling remains unchanged */
     .navbar-menu a {
         font-size: 26px; /* Increase font size as needed */
@@ -485,8 +504,9 @@
                     
                     <!-- Register Now Button -->
                     <div style="text-align: center; margin-top: 20px;">
-                        <button style="font-family:Ubuntu;color: #fff; font-size:28px; background-color: #006791; padding: 10px 20px; border-radius: 4px; border: none;" onclick="window.location.href='https://forms.gle/rYzEUPZhAig4pQUE9'">Register Now</button>
+                        <button class="button-register" onclick="window.location.href='https://forms.gle/rYzEUPZhAig4pQUE9'">Register Now</button>
                     </div>
+
                 </div>
             </div>
         </div>
